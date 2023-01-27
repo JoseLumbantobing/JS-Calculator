@@ -49,10 +49,12 @@ const decimalNumber = (dot) => {
 }
 
 const percentCalculation = () => {
+    if(currentNumber === '0') return;
     currentNumber = parseInt(currentNumber) / 100;
 }
 
 const negativeTransform = () => {
+    if(currentNumber === '0') return;
     currentNumber *= -1;
 }
 
